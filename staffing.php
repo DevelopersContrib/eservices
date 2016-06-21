@@ -1,18 +1,22 @@
 <?php include 'header-pages.php'; ?>
 
-<title>About <?=$domain?></title>
-	<meta name="title" content="About <?=$domain?> " />
-	<meta name="description" content="About <?=$domain?> today." />
+<title>Staffing <?=$domain?></title>
+	<meta name="title" content="Contact <?=$domain?> " />
+	<meta name="description" content="Contact <?=$domain?> today." />
 	<style>
-	.full-screen {
-		min-height:459px !important;
-	}
-	.bg-black {
-    padding: 150px 0px;
+	.form-wrapper {
+    border: 1px dashed #EEE;
+}
+.iw-icon {  
+    padding: 15px 0px !important;
+}
+.iw-hover:hover #hover-content {  
+    margin-left: -9px;
 }
 	</style>
     </head>
 <body>
+
 <? include 'navigation.php'; ?>
     
       <section class="content-top-margin page-title page-title-small bg-gray">
@@ -20,31 +24,37 @@
                 <div class="row">
                     <div style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;" class="col-md-8 col-sm-12 wow fadeInUp animated" data-wow-duration="300ms">
                         <!-- page title -->
-                        <h1 class="black-text">About <?=$domain?></h1>
+                        <h1 class="black-text">Staffing <?=$domain?></h1>
                         <!-- end page title -->
                     </div>
                     <div style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;" class="col-md-4 col-sm-12 breadcrumb text-uppercase wow fadeInUp xs-display-none animated" data-wow-duration="600ms">
                         <!-- breadcrumb -->
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
+                            <li><a href="/staffing">Staffing</a></li>
                         </ul>
                         <!-- end breadcrumb -->
                     </div>
                 </div>
             </div>
-        </section>		   
-	<section style="visibility: visible; animation-name: fadeIn;" class="bg-black wow fadeIn animated">
+        </section>		    
+		 <!-- content section -->
+        <section class="wow fadeIn">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-8 text-center center-col">
-                        <div class="about-year text-uppercase white-text"><span class="clearfix">20</span> Years</div>
-                        <p class="title-small text-uppercase letter-spacing-1 white-text font-weight-100">We have been in the forefront of domain development and technologies since 1996</p>
+				<div class="row">
+                    <div class="col-md-5 col-sm-8 text-center center-col">
+                        <p class="title-large text-uppercase letter-spacing-1 black-text font-weight-600">Our Staffing Needs at <?php echo $domain?></p>
+                        <p class="text-large margin-ten"> We are looking for the best of the best, Full-Time, Part-Time, Moonlighting, Contractual and Freelance. We consult and manage over 100,000 domain name ventures and are always seeking Strategic Partnerships, Applications, Domains, Engineers, Developers, Specialist and just cool smart people around the Globe. Learn more about openings and opportunities with our partner companies and send us your resume or examples to accelerate the process. Learn more about openings and opportunities with our partner companies.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-	
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-xs-11 center-col xs-no-padding">
+					<script type="text/javascript" src="http://tools.contrib.com/contactform?d=<?echo $domain?>&f=staffing"></script>
+					</div>
+				</div>
+			</div>
+		</section>		
+            
     
     
     <script type="text/javascript" charset="utf-8">
